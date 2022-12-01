@@ -1,0 +1,29 @@
+{
+  "name": "@yousolution/node-red-contrib-you-graphql-timeout",
+  "version": "1.4.2",
+  "description": "A Node-RED node to make GraphQL calls",
+  "dependencies": {
+    "axios": ">=0.21.2",
+    "mustache": "^2.3.0"
+  },
+  "scripts": {
+    "update": "npm pack && mv yousolution-node-red-contrib-you-graphql-timeout-$npm_package_version.tgz ./data && cd data && npm i yousolution-node-red-contrib-you-graphql-timeout-$npm_package_version.tgz && docker-compose restart"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yousolution-cloud/node-red-contrib-you-graphql-timeout"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "node-red",
+    "graphql"
+  ],
+  "node-red": {
+    "nodes": {
+      "graphql": "graphql.js"
+    }
+  },
+  "author": {
+    "name": "Dario Chemello [YouSolution]"
+  }
+}
